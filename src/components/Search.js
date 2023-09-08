@@ -1,12 +1,12 @@
 import React, { useContext,useState } from 'react'
-import { mockSearchResults } from '../constants/mock';
 import {XMarkIcon, MagnifyingGlassIcon} from "@heroicons/react/20/solid";
 import SearchResults from './SearchResults';
 import ThemeContext from '../context/ThemeContext'
+import { searchSymbols } from '../API/stock-api';
 
 const Search = () => {
     const [input, setInput] = useState("");
-    const [bestMatches, setBestMatches] = useState(mockSearchResults.result);
+    const [bestMatches, setBestMatches] = useState([]);
 
     const {darkMode} = useContext(ThemeContext);
     
@@ -16,8 +16,19 @@ const Search = () => {
         setBestMatches([]);
     };
 
-    const updateBestMatches = () => {
-        setBestMatches(mockSearchResults.result);
+    const updateBestMatches = async () => {
+        try{
+            if(input){
+                const SearchResults = await searchSymbols(input)
+                const results = SearchResults.results;
+                setBestMatches(results);
+            }
+        }
+        catch(error){
+            
+            setBestMatches([]);
+            console.log(error);
+        }
     };
   return (
     <div className={`flex items-center my-4 border-2 rounded-md relative z-50 w-96 ${darkMode ? "bg-gray-900 border-gray-800" : " bg-white border-neutral-200"}`}>
