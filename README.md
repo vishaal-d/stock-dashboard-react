@@ -29,3 +29,6 @@ This project is a stock dashboard app that uses the [Finnhub API](https://finnhu
 ### Select Theme
 
 <img src="./src/assets/theme.gif" />
+
+## Link
+(https://vishaal-d.github.io/stock-dashboard-react/)
