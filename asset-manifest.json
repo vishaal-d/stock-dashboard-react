@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stock-dashboard-react/static/css/main.f4ab80cb.css",
+    "main.js": "/stock-dashboard-react/static/js/main.c3d8e7d4.js",
+    "static/js/787.50660ca3.chunk.js": "/stock-dashboard-react/static/js/787.50660ca3.chunk.js",
+    "index.html": "/stock-dashboard-react/index.html",
+    "main.f4ab80cb.css.map": "/stock-dashboard-react/static/css/main.f4ab80cb.css.map",
+    "main.c3d8e7d4.js.map": "/stock-dashboard-react/static/js/main.c3d8e7d4.js.map",
+    "787.50660ca3.chunk.js.map": "/stock-dashboard-react/static/js/787.50660ca3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4ab80cb.css",
+    "static/js/main.c3d8e7d4.js"
+  ]
+}
