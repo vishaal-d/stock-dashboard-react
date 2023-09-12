@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
-import { MoonIcon } from "@heroicons/react/24/solid";
+import { MoonIcon } from "@heroicons/react/20/solid";
 
 const ThemeIcon = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
